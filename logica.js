@@ -1,14 +1,13 @@
 let currentIndex = 0;
 
 function moveCarousel(direction) {
-    const items = document.querySelectorAll('.service-item');
+    const items = document.querySelectorAll('.carousel-item');
     const totalItems = items.length;
 
-    // Calcula el nuevo índice
+    // Actualiza el índice actual
     currentIndex = (currentIndex + direction + totalItems) % totalItems;
 
     // Mueve los elementos del carrusel
-    const carouselItems = document.querySelector('.carousel-items');
-    const itemWidth = items[0].offsetWidth; // ancho de cada item
-    carouselItems.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    const carouselInner = document.querySelector('.carousel-inner');
+    carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
 }

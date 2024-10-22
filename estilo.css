@@ -72,31 +72,25 @@ h2 {
     border-radius: 5px; /* bordes redondeados para imágenes */
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* columnas flexibles */
-    gap: 20px; /* espacio entre las tarjetas */
-    margin-top: 20px; /* espacio superior */
-}
-
 .carousel {
     position: relative;
     overflow: hidden; /* oculta el desbordamiento */
+    margin-top: 20px; /* margen superior */
+    border: 1px solid #ddd; /* borde del carrusel */
+    border-radius: 8px; /* bordes redondeados del carrusel */
+    background-color: #fff; /* fondo blanco para el carrusel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra para el carrusel */
 }
 
-.carousel-items {
+.carousel-inner {
     display: flex; /* utilizar flexbox para el carrusel */
     transition: transform 0.5s ease; /* suavizar la transición */
 }
 
-.service-item {
-    background-color: #ffffff; /* fondo blanco */
-    border: 1px solid #ddd; /* borde gris */
-    border-radius: 8px; /* bordes redondeados */
-    padding: 15px; /* relleno */
+.carousel-item {
+    min-width: 100%; /* cada item ocupa todo el ancho del carrusel */
+    padding: 20px;
     text-align: center; /* centrar texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra más fuerte */
-    min-width: 250px; /* ancho mínimo de la tarjeta */
 }
 
 .carousel-button {
