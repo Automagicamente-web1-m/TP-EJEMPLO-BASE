@@ -93,6 +93,16 @@ h2 {
     text-align: center; /* centrar texto */
 }
 
+.carousel-item p {
+    margin: 10px 0; /* espacio entre párrafos */
+}
+
+.carousel-item strong {
+    color: #4CAF50; /* color verde para los títulos de los campos */
+    font-weight: bold; /* peso de fuente en negrita */
+}
+
+
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -111,4 +121,12 @@ h2 {
 
 .next {
     right: 10px; /* botón siguiente a la derecha */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
