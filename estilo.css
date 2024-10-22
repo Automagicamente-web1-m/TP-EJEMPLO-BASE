@@ -5,14 +5,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-}
-
-.grid-container {
     display: grid;
     grid-template-rows: auto 1fr auto; /* header, main, footer */
-    grid-template-columns: 1fr; /* una sola columna */
     height: 100vh; /* altura total de la ventana */
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -38,19 +34,32 @@ nav ul li a {
 
 main {
     padding: 20px;
+    background-color: #f9f9f9; /* fondo claro para el main */
+}
+
+h2 {
+    margin-bottom: 20px; /* espacio debajo de los encabezados */
+    color: #333; /* color de los encabezados */
 }
 
 .grid-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* ancho mínimo de 200px */
+    gap: 15px; /* espacio entre los elementos */
 }
 
 .grid-item {
-    background-color: #f4f4f4;
+    background-color: #fff; /* fondo blanco para los items */
     padding: 20px;
     border: 1px solid #ddd;
+    border-radius: 8px; /* bordes redondeados */
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra suave */
+    transition: transform 0.2s; /* efecto de transición para hover */
+}
+
+.grid-item:hover {
+    transform: translateY(-5px); /* elevar el item al pasar el cursor */
 }
 
 footer {
