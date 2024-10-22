@@ -40,6 +40,17 @@ main {
 h2 {
     margin-bottom: 20px; /* espacio debajo de los encabezados */
     color: #333; /* color de los encabezados */
+    font-size: 24px; /* tamaño de fuente */
+    font-weight: bold; /* peso de fuente */
+    border-bottom: 2px solid #4CAF50; /* línea inferior */
+    padding-bottom: 10px; /* espacio debajo del texto */
+}
+
+p {
+    margin-bottom: 15px; /* espacio debajo de los párrafos */
+    line-height: 1.6; /* altura de línea para mejor legibilidad */
+    color: #666; /* color gris para el texto */
+    font-size: 16px; /* tamaño de fuente */
 }
 
 .grid-items {
@@ -60,6 +71,18 @@ h2 {
 
 .grid-item:hover {
     transform: translateY(-5px); /* elevar el item al pasar el cursor */
+}
+
+ul {
+    list-style-type: disc; /* tipo de lista */
+    margin-left: 20px; /* margen a la izquierda */
+    margin-bottom: 20px; /* margen abajo */
+}
+
+li {
+    margin-bottom: 10px; /* espacio entre los elementos de la lista */
+    color: #444; /* color del texto de la lista */
+    font-size: 16px; /* tamaño de fuente de los elementos de la lista */
 }
 
 footer {
