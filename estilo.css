@@ -91,3 +91,35 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* columnas flexibles */
+    gap: 20px; /* espacio entre las tarjetas */
+    margin-top: 20px; /* espacio superior */
+}
+
+.service-item {
+    background-color: #ffffff; /* fondo blanco */
+    border: 1px solid #ddd; /* borde gris */
+    border-radius: 8px; /* bordes redondeados */
+    padding: 15px; /* relleno */
+    text-align: center; /* centrar texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra más fuerte */
+    transition: transform 0.2s; /* efecto de transición para hover */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* efecto de elevación al pasar el cursor */
+    border-color: #4CAF50; /* borde verde al hacer hover */
+}
+
+.service-item h3 {
+    color: #4CAF50; /* color verde para los títulos de servicio */
+    margin-bottom: 10px; /* margen inferior */
+}
+
+.service-item p {
+    color: #666; /* color gris para la descripción */
+    font-size: 14px; /* tamaño de fuente más pequeño */
+}
