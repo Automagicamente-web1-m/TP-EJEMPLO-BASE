@@ -46,13 +46,6 @@ h2 {
     padding-bottom: 10px; /* espacio debajo del texto */
 }
 
-p {
-    margin-bottom: 15px; /* espacio debajo de los párrafos */
-    line-height: 1.6; /* altura de línea para mejor legibilidad */
-    color: #666; /* color gris para el texto */
-    font-size: 16px; /* tamaño de fuente */
-}
-
 .grid-items {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* ancho mínimo de 200px */
@@ -73,23 +66,10 @@ p {
     transform: translateY(-5px); /* elevar el item al pasar el cursor */
 }
 
-ul {
-    list-style-type: disc; /* tipo de lista */
-    margin-left: 20px; /* margen a la izquierda */
-    margin-bottom: 20px; /* margen abajo */
-}
-
-li {
-    margin-bottom: 10px; /* espacio entre los elementos de la lista */
-    color: #444; /* color del texto de la lista */
-    font-size: 16px; /* tamaño de fuente de los elementos de la lista */
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+.grid-item img {
+    max-width: 100%; /* hacer que la imagen sea responsiva */
+    height: auto; /* mantener la proporción de la imagen */
+    border-radius: 5px; /* bordes redondeados para imágenes */
 }
 
 .services-grid {
@@ -99,6 +79,16 @@ footer {
     margin-top: 20px; /* espacio superior */
 }
 
+.carousel {
+    position: relative;
+    overflow: hidden; /* oculta el desbordamiento */
+}
+
+.carousel-items {
+    display: flex; /* utilizar flexbox para el carrusel */
+    transition: transform 0.5s ease; /* suavizar la transición */
+}
+
 .service-item {
     background-color: #ffffff; /* fondo blanco */
     border: 1px solid #ddd; /* borde gris */
@@ -106,20 +96,25 @@ footer {
     padding: 15px; /* relleno */
     text-align: center; /* centrar texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra más fuerte */
-    transition: transform 0.2s; /* efecto de transición para hover */
+    min-width: 250px; /* ancho mínimo de la tarjeta */
 }
 
-.service-item:hover {
-    transform: translateY(-5px); /* efecto de elevación al pasar el cursor */
-    border-color: #4CAF50; /* borde verde al hacer hover */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
-.service-item h3 {
-    color: #4CAF50; /* color verde para los títulos de servicio */
-    margin-bottom: 10px; /* margen inferior */
+.prev {
+    left: 10px; /* botón anterior a la izquierda */
 }
 
-.service-item p {
-    color: #666; /* color gris para la descripción */
-    font-size: 14px; /* tamaño de fuente más pequeño */
+.next {
+    right: 10px; /* botón siguiente a la derecha */
 }

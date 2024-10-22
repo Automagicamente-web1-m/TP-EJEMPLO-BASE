@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Página Web con Grilla</title>
+    <title>Página Web con Grilla y Carrusel</title>
 </head>
 <body>
     <header>
@@ -22,58 +22,69 @@
     <main>
         <h2>Bienvenido a Nuestra Página</h2>
         <p>Esta es una página de ejemplo que utiliza un diseño de grilla. A continuación, puedes ver algunos de nuestros elementos destacados:</p>
-    
+
         <div class="grid-items">
             <div class="grid-item">
+                <img src="https://png.pngtree.com/png-vector/20240314/ourlarge/pngtree-grocery-basket-and-a-list-of-products-png-image_11952487.png" alt="Item 1">
                 <h3>Item 1</h3>
                 <p>Descripción del item 1.</p>
             </div>
             <div class="grid-item">
+                <img src="https://png.pngtree.com/png-vector/20240314/ourlarge/pngtree-grocery-basket-and-a-list-of-products-png-image_11952487.png" alt="Item 2">
                 <h3>Item 2</h3>
                 <p>Descripción del item 2.</p>
             </div>
             <div class="grid-item">
+                <img src="https://png.pngtree.com/png-vector/20240314/ourlarge/pngtree-grocery-basket-and-a-list-of-products-png-image_11952487.png" alt="Item 3">
                 <h3>Item 3</h3>
                 <p>Descripción del item 3.</p>
             </div>
             <div class="grid-item">
+                <img src="https://png.pngtree.com/png-vector/20240314/ourlarge/pngtree-grocery-basket-and-a-list-of-products-png-image_11952487.png" alt="Item 4">
                 <h3>Item 4</h3>
                 <p>Descripción del item 4.</p>
             </div>
             <div class="grid-item">
+                <img src="https://png.pngtree.com/png-vector/20240314/ourlarge/pngtree-grocery-basket-and-a-list-of-products-png-image_11952487.png" alt="Item 5">
                 <h3>Item 5</h3>
                 <p>Descripción del item 5.</p>
             </div>
             <div class="grid-item">
+                <img src="https://png.pngtree.com/png-vector/20240314/ourlarge/pngtree-grocery-basket-and-a-list-of-products-png-image_11952487.png" alt="Item 6">
                 <h3>Item 6</h3>
                 <p>Descripción del item 6.</p>
             </div>
         </div>
-    
+
         <h2>Nuestros Servicios</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>Servicio 1</h3>
-                <p>Descripción breve del servicio 1.</p>
+        <div class="carousel">
+            <div class="carousel-items">
+                <div class="service-item">
+                    <h3>Servicio 1</h3>
+                    <p>Descripción breve del servicio 1.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Servicio 2</h3>
+                    <p>Descripción breve del servicio 2.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Servicio 3</h3>
+                    <p>Descripción breve del servicio 3.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Servicio 4</h3>
+                    <p>Descripción breve del servicio 4.</p>
+                </div>
             </div>
-            <div class="service-item">
-                <h3>Servicio 2</h3>
-                <p>Descripción breve del servicio 2.</p>
-            </div>
-            <div class="service-item">
-                <h3>Servicio 3</h3>
-                <p>Descripción breve del servicio 3.</p>
-            </div>
-            <div class="service-item">
-                <h3>Servicio 4</h3>
-                <p>Descripción breve del servicio 4.</p>
-            </div>
+            <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
         </div>
     </main>
-    
 
     <footer>
         <p>© 2024 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="logica.js"></script>
 </body>
 </html>
